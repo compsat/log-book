@@ -1,0 +1,104 @@
+body {
+	background: #FFCBA6;
+	margin: 0;
+	padding: 0;
+}
+
+.left {
+	position: fixed;
+	width: 45vw;
+	height: 100vh;
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: right;
+	align-items: flex-end;
+	vertical-align: middle;
+}
+
+h1 {
+	padding: 30px 30px 30px 0px;
+	margin: 0;
+	width: 300px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 76px;
+	color: #262424;
+	white-space: normal;
+
+	overflow: hidden;
+}
+
+.toprect {
+	width: 200px;
+	height: 0px;
+	line-height: 0px;
+	margin: 30px 30px 30px 0px;
+	padding: 10px;
+	border-bottom: 61px solid #5C184E;
+	color: #FFF;
+	background-color: #FFF;
+}
+
+.bottomrect {
+	width: 220px;
+	height: 100px;
+	margin: 0px 30px 30px 30px;
+	border-top: 6px solid #000;
+	color: #FFF;
+	background-color: #FFF;
+}
+
+.right {
+	width: 55vw;
+	left: 55vw;
+	float: right;
+}
+
+li {
+	list-style-type: none;
+	margin: 25px 10px;
+}
+
+a {
+	padding: 0px;
+	margin: 0px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 38px;
+	color: #07106D;
+	text-decoration: none;
+}
+
+h2 {
+	margin: 20px 50px;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 42px;
+
+	color: #07106D;
+}
+
+p {
+	margin: 20px 50px;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	
+	color: #262424;
+}
+
+.created-by {
+	font-weight: normal;
+}
