@@ -1,0 +1,289 @@
+    /*navbar*/
+    
+    .navbar {
+        position: absolute;
+        width: 1440px;
+        height: 67px;
+        left: 0px;
+        top: 0px;
+        background: #FFCBA6;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .nav-home {
+        position: absolute;
+        left: 7.5%;
+        right: 84.38%;
+        top: 35.82%;
+        bottom: 40.3%;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #07106D;
+    }
+    
+    .nav-list {
+        position: absolute;
+        left: 17.43%;
+        right: 73.47%;
+        top: 35.82%;
+        bottom: 40.3%;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #07106D;
+    }
+    
+    .nav-map {
+        position: absolute;
+        left: 29.65%;
+        right: 59.72%;
+        top: 35.82%;
+        bottom: 40.3%;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #07106D;
+    }
+    
+    .nav-access {
+        position: absolute;
+        left: 43.4%;
+        right: 48.47%;
+        top: 35.82%;
+        bottom: 40.3%;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #07106D;
+    }
+    
+    .nav-home:hover {
+        color: #242424;
+        text-decoration: none;
+        transition: all 2s ease;
+        font-size: 15px;
+    }
+    
+    .nav-list:hover {
+        color: #242424;
+        text-decoration: none;
+        transition: all 2s ease;
+        font-size: 15px;
+    }
+    
+    .nav-access:hover {
+        color: #242424;
+        text-decoration: none;
+        transition: all 2s ease;
+        font-size: 15px;
+    }
+    
+    .nav-map:hover {
+        color: #242424;
+        text-decoration: none;
+        transition: all 2s ease;
+        font-size: 15px;
+    }
+    /*search*/
+    
+    input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        background-color: #FFFFFF;
+    }
+    
+    .no-outline:focus {
+        outline: none;
+    }
+    
+    .search-bar {
+        position: absolute;
+        width: 348px;
+        height: 38px;
+        left: 134px;
+        top: 153px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        /* identical to box height */
+        color: #07106D;
+    }
+    
+    .search-bar::placeholder {
+        position: absolute;
+        width: 348px;
+        height: 38px;
+        left: 134px;
+        top: 153px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        /* identical to box height */
+        color: #07106D;
+        border: none;
+        border-color: transparent;
+    }
+    
+    .search-img {
+        position: absolute;
+        left: 41.88%;
+        right: 56.18%;
+        top: 10.8%;
+        bottom: 87.09%;
+        background: url(image.png);
+    }
+    
+    .search-border {
+        position: absolute;
+        width: 509px;
+        height: 0px;
+        left: 134px;
+        top: 206px;
+        border: 3px solid #07106D;
+    }
+    
+    .result-bar {
+        position: absolute;
+        width: 290px;
+        height: 38px;
+        left: 134px;
+        top: 283px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        /* identical to box height */
+        color: #07106D;
+    }
+    
+    .search-border2 {
+        position: absolute;
+        width: 124px;
+        height: 0px;
+        left: 134px;
+        top: 346px;
+        border: 5px solid #000000;
+    }
+    
+    .nowrap {
+        white-space: nowrap;
+    }
+    /*result*/
+    
+    .other-bar {
+        position: absolute;
+        width: 359px;
+        height: 38px;
+        left: 134px;
+        top: 720px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        /* identical to box height */
+        color: #07106D;
+    }
+    
+    .search-border3 {
+        position: absolute;
+        width: 124px;
+        height: 0px;
+        left: 134px;
+        top: 783px;
+        border: 5px solid #000000;
+    }
+    
+    .card0 {
+        position: absolute;
+        width: 180px;
+        height: 262px;
+        left: 134px;
+        top: 384px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+    }
+    
+    .card-img-top0 {
+        position: absolute;
+        left: 13.57%;
+        right: 13.18%;
+        top: 9.8%;
+        bottom: 39.87%;
+        background: #C4C4C4;
+    }
+    
+    .card-title0 {
+        position: absolute;
+        left: 13.57%;
+        right: 13.18%;
+        top: 68.16%;
+        bottom: 21.16%;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .card1 {
+        position: absolute;
+        width: 180px;
+        height: 262px;
+        left: 381px;
+        top: 381px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+    }
+    
+    .card-img-top1 {
+        position: absolute;
+        left: 13.57%;
+        right: 13.18%;
+        top: 9.51%;
+        bottom: 40.22%;
+        background: #C4C4C4;
+    }
+    
+    .card-title1 {
+        position: absolute;
+        left: 13.33%;
+        right: 13.33%;
+        top: 67.18%;
+        bottom: 8.02%;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+    }
