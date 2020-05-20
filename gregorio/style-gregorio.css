@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.whole {
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+}
+
+.whole p {
+	margin: 20px 50px;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	
+	color: #262424;
+}
+
+.left {
+	position: fixed;
+	width: 45%;
+	height: 100%;
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: right;
+	align-items: flex-end;
+	vertical-align: middle;
+}
+
+.left h1 {
+	padding: 30px 30px 30px 0px;
+	margin: 0;
+	width: 300px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 76px;
+	color: #262424;
+	white-space: normal;
+}
+
+.left .toprect {
+	width: 200px;
+	height: 0px;
+	line-height: 0px;
+	margin: 30px 30px 30px 0px;
+	padding: 10px;
+	border-bottom: 61px solid #5C184E;
+	color: #FFF;
+	background-color: #FFF;
+}
+
+.left .bottomrect {
+	width: 220px;
+	height: 100px;
+	margin: 0px 30px 30px 30px;
+	border-top: 6px solid #000;
+	color: #FFF;
+	background-color: #FFF;
+}
+
+.right {
+	position: relative;
+	background: #FFCBA6;
+	left: 45%;
+	width: 55%;
+}
+
+.right li {
+	list-style-type: none;
+	margin: 25px 10px;
+}
+
+.right a {
+	padding: 0px;
+	margin: 0px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 38px;
+	color: #07106D;
+	text-decoration: none;
+}
+
+.right h2 {
+	margin: 20px 50px;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 42px;
+
+	color: #07106D;
+}
+
+.right .created-by {
+	font-weight: normal;
+}
+
+/* CHANGELOG
+
+- Changed vw to %
+- Added flexbox container as parent of left and right div
+- More specific scope
+
+*/
+
+/* TO-DO
+
+- Change px to em/rem
+- Make it stack vertically on smaller screens
+
+*/
