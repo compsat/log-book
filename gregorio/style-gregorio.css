@@ -1,3 +1,5 @@
+/* HOMEPAGE */
+
 body {
 	margin: 0;
 	padding: 0;
@@ -91,7 +93,7 @@ body {
 	margin: 1.171875rem 0.46875rem;
 }
 
-.right a {
+.right a, .procedure a {
 	padding: 0px;
 	margin: 0px;
 	font-family: Rubik;
@@ -185,4 +187,122 @@ body {
 	.right p {
 		margin: 1.25rem 3.125rem;
 	}
+}
+
+/* PROCEDURE PAGE */
+
+.procedure {
+	display: flex;
+	flex-direction: column;
+}
+
+.procedure-navbar {
+	position: fixed;
+	width: 100%;
+	margin: 0px;
+	background: #FFCBA6;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	padding: 25px 80px;
+	overflow: hidden;
+}
+
+.main {
+	margin: 100px;
+}
+
+.procedure a {
+	margin: 25px;
+	
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+
+	color: #07106D;
+}
+
+.procedure h1 {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 38px;
+	
+	color: #262424;
+}
+
+.procedure p {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: #262424;
+}
+
+.line {
+	width: 100%;
+	border: 1px solid #C5C5C5;
+}
+
+.procedure li {
+	background: #FFFFFF;
+	border: 1px solid #262424;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	/*list-style-type: none;*/
+	
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: #262424;
+}
+
+.vcards {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.card {
+	width: 15%;
+	margin: 20px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+
+	color: #000000;
+	
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card h2 {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+
+	color: #000000;
 }
