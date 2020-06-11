@@ -1,105 +1,38 @@
+    body {
+        margin: 0;
+        padding: 0;
+    }
     /*navbar*/
     
     .navbar {
         position: absolute;
-        width: 1440px;
-        height: 67px;
-        left: 0px;
-        top: 0px;
+        width: 100%;
+        height: 4.188rem;
         background: #FFCBA6;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     }
     
-    .nav-home {
-        position: absolute;
-        left: 7.5%;
-        right: 84.38%;
-        top: 35.82%;
-        bottom: 40.3%;
+    .nav-link {
+        position: relative;
         font-family: IBM Plex Sans;
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 0.875rem;
         text-align: center;
         color: #07106D;
+        margin-left: 3.125rem;
+        left: 2.775rem;
     }
     
-    .nav-list {
-        position: absolute;
-        left: 17.43%;
-        right: 73.47%;
-        top: 35.82%;
-        bottom: 40.3%;
-        font-family: IBM Plex Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        color: #07106D;
-    }
-    
-    .nav-map {
-        position: absolute;
-        left: 29.65%;
-        right: 59.72%;
-        top: 35.82%;
-        bottom: 40.3%;
-        font-family: IBM Plex Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        color: #07106D;
-    }
-    
-    .nav-access {
-        position: absolute;
-        left: 43.4%;
-        right: 48.47%;
-        top: 35.82%;
-        bottom: 40.3%;
-        font-family: IBM Plex Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        color: #07106D;
-    }
-    
-    .nav-home:hover {
+    .nav-link:hover {
         color: #242424;
         text-decoration: none;
         transition: all 2s ease;
-        font-size: 15px;
-    }
-    
-    .nav-list:hover {
-        color: #242424;
-        text-decoration: none;
-        transition: all 2s ease;
-        font-size: 15px;
-    }
-    
-    .nav-access:hover {
-        color: #242424;
-        text-decoration: none;
-        transition: all 2s ease;
-        font-size: 15px;
-    }
-    
-    .nav-map:hover {
-        color: #242424;
-        text-decoration: none;
-        transition: all 2s ease;
-        font-size: 15px;
+        font-size: 1rem;
     }
     /*search*/
     
-    input {
+    .search-venue input {
         border-top-style: hidden;
         border-right-style: hidden;
         border-left-style: hidden;
@@ -113,75 +46,66 @@
     
     .search-bar {
         position: absolute;
-        width: 348px;
-        height: 38px;
-        left: 134px;
-        top: 153px;
+        width: 25rem;
+        height: 2.375rem;
+        left: 8.375rem;
+        top: 9.563rem;
         font-family: Rubik;
         font-style: normal;
         font-weight: bold;
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 2rem;
+        line-height: 2.375rem;
         /* identical to box height */
         color: #07106D;
     }
     
     .search-bar::placeholder {
         position: absolute;
-        width: 348px;
-        height: 38px;
-        left: 134px;
-        top: 153px;
+        width: 21.75rem;
+        height: 2.375rem;
+        left: 8.375rem;
+        top: 9.563rem;
         font-family: Rubik;
         font-style: normal;
         font-weight: bold;
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 2rem;
+        line-height: 2.375rem;
         /* identical to box height */
         color: #07106D;
         border: none;
         border-color: transparent;
     }
     
-    .search-img {
-        position: absolute;
-        left: 41.88%;
-        right: 56.18%;
-        top: 10.8%;
-        bottom: 87.09%;
-        background: url(image.png);
-    }
-    
     .search-border {
         position: absolute;
-        width: 509px;
+        width: 31.813rem;
         height: 0px;
-        left: 134px;
-        top: 206px;
+        left: 8.375rem;
+        top: 12.875rem;
         border: 3px solid #07106D;
     }
     
     .result-bar {
         position: absolute;
-        width: 290px;
-        height: 38px;
-        left: 134px;
-        top: 283px;
+        width: 18.125rem;
+        height: 2.375rem;
+        left: 8.375rem;
+        top: 17.688rem;
         font-family: Rubik;
         font-style: normal;
         font-weight: bold;
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 2rem;
+        line-height: 2.375rem;
         /* identical to box height */
         color: #07106D;
     }
     
     .search-border2 {
         position: absolute;
-        width: 124px;
+        width: 7.75rem;
         height: 0px;
-        left: 134px;
-        top: 346px;
+        left: 8.375rem;
+        top: 21.625rem;
         border: 5px solid #000000;
     }
     
@@ -190,41 +114,44 @@
     }
     /*result*/
     
-    .other-bar {
-        position: absolute;
-        width: 359px;
-        height: 38px;
-        left: 134px;
-        top: 720px;
-        font-family: Rubik;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 38px;
-        /* identical to box height */
-        color: #07106D;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 3.125rem;
+        justify-content: space-between;
+        margin-left: 8.375rem;
+        margin-right: 8.375rem;
+        padding-top: 25rem;
     }
     
-    .search-border3 {
+    .search-img {
         position: absolute;
-        width: 124px;
-        height: 0px;
-        left: 134px;
-        top: 783px;
-        border: 5px solid #000000;
+        width: 21.75rem;
+        height: 2.375rem;
+        left: 37.375rem;
+        top: 9.563rem;
+        color: #000000;
+    }
+    
+    .search-img:hover {
+        color: #000000;
+        text-decoration: none;
+        transition: all 2s ease;
+        font-size: 2.5rem;
     }
     
     .card0 {
-        position: absolute;
-        width: 180px;
-        height: 262px;
-        left: 134px;
-        top: 384px;
+        position: relative;
+        width: 11.25rem;
+        height: 16.375rem;
         background: #FFFFFF;
         border: 1px solid #000000;
         box-sizing: border-box;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
+        border-radius: 0.625rem;
+        padding: 1.25rem;
+        text-align: center;
     }
     
     .card-img-top0 {
@@ -245,45 +172,8 @@
         font-family: IBM Plex Sans;
         font-style: normal;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 23px;
-        text-align: center;
-        color: #000000;
-    }
-    
-    .card1 {
-        position: absolute;
-        width: 180px;
-        height: 262px;
-        left: 381px;
-        top: 381px;
-        background: #FFFFFF;
-        border: 1px solid #000000;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-    }
-    
-    .card-img-top1 {
-        position: absolute;
-        left: 13.57%;
-        right: 13.18%;
-        top: 9.51%;
-        bottom: 40.22%;
-        background: #C4C4C4;
-    }
-    
-    .card-title1 {
-        position: absolute;
-        left: 13.33%;
-        right: 13.33%;
-        top: 67.18%;
-        bottom: 8.02%;
-        font-family: IBM Plex Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 1.125rem;
+        line-height: 1.438rem;
         text-align: center;
         color: #000000;
     }

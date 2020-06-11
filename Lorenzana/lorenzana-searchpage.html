@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style-lorenzana.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style-lorenzana.css">
+    <script src="all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -17,27 +18,27 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg">
         <!--links-->
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse col d-flex justify-content-between align-items-baseline flex-wrap">
             <ul class="navbar-nav">
-                <li><a href="#" class="nav-home">HOME ></a></li>
-                <li><a href="#" class="nav-list">LIST OF VENUES ></a></li>
-                <li><a href="#" class="nav-map">MAP OF THE ATENEO ></a></li>
-                <li><a href="#" class="nav-access">ACCESS FORMS ></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">HOME ></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">LIST OF VENUES ></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">MAP OF THE ATENEO ></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">ACCESS FORMS ></a></li>
             </ul>
         </div>
     </nav>
 
 
     <section id="search">
-        <div>
+        <div class="search-venue">
             <span class="search-venue nowrap">
-            <input type="text" id="search" class="search-bar no-outline" placeholder="SEARCH FOR A VENUE">
+            <input type="text" id="search" class="search-bar no-outline" placeholder="SEARCH FOR A VENUE"><a href="#"><i class=" search-img fas fa-search fa-2x"></i></a>
             <div class="search-border"></div>
             </span>
         </div>
         <div>
             <span class="search-venue nowrap">
-            <h1 class="result-bar">Results for Hyundai</h1>
+            <h1 class="result-bar">All venues</h1>
             <div class="search-border2"></div>
             </span>
         </div>
@@ -45,20 +46,142 @@
 
 
     <section id="results">
-        <div class="card-deck">
-            <div class="card0">
-                <!--<img class="card-img-top" src="" alt="Card image cap">-->
-                <div class="card-img-top0"></div>
-                <div class="card-body">
-                    <h5 class="card-title0">Hyundai Hall</h5>
+        <div class="grid-container">
+            <!--result 1-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Ateneo LS</h5>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div>
-            <span class="search-venue nowrap">
-                <h1 class="other-bar">Other similar results</h1>
-                <div class="search-border3"></div>
-            </span>
+            </a>
+            <!--result 2-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Gonzaga Theatre</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 3-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Arete</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 4-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Hyundai Hall</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 5-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">This is a very long sentence because it is</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 6-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">This is a very long sentence because it is</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 7-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Lorem Ipsum</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 8-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">This is a very long sentence because it is</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 9-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Lorem Ipsum</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 10-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">This is a very long sentence because it is</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 11-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Lorem Ipsum</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 12-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Lorem Ipsum</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 13-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Lorem Ipsum</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 14-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Lorem Ipsum</h5>
+                    </div>
+                </div>
+            </a>
+            <!--result 15-->
+            <a href="#">
+                <div class="card0">
+                    <div class="card-img-top0"></div>
+                    <div class="card-body">
+                        <h5 class="card-title0">Lorem Ipsum</h5>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 
