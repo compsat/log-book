@@ -199,24 +199,25 @@ body {
 .procedure-navbar {
 	position: fixed;
 	width: 100%;
-	margin: 0px;
+	margin: 0;
 	background: #FFCBA6;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-	padding: 25px 80px;
+	box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+	padding: 1.5625rem 5rem;
 	overflow: hidden;
+	z-index: 1;
 }
 
 .main {
-	margin: 100px;
+	margin: 6.25rem;
 }
 
 .procedure a {
-	margin: 25px;
+	margin: 1.5625rem;
 	
 	font-family: IBM Plex Sans;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-align: center;
 	vertical-align: middle;
 
@@ -227,8 +228,7 @@ body {
 	font-family: Rubik;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 32px;
-	line-height: 38px;
+	font-size: 2rem;
 	
 	color: #262424;
 }
@@ -237,61 +237,78 @@ body {
 	font-family: Rubik;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 0.875rem;
 
 	color: #262424;
 }
 
 .line {
 	width: 100%;
-	border: 1px solid #C5C5C5;
+	border: 0.0625rem solid #C5C5C5;
+	margin: 2.5rem 0;
+}
+
+.procedure ol {
+	counter-reset: count;
+	margin: 0;
+	padding: 0;
 }
 
 .procedure li {
 	background: #FFFFFF;
-	border: 1px solid #262424;
+	border: 0.0625rem solid #262424;
 	box-sizing: border-box;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-	padding: 10px;
-	margin: 10px;
-	/*list-style-type: none;*/
+	padding: 0.625rem;
+	padding-left: 3.125rem;
+	margin: 1rem 0;
+	list-style-type: none;
+	counter-increment: count;
 	
 	font-family: Rubik;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 0.875rem;
 
 	color: #262424;
 }
 
+.procedure li::before {
+	content: counter(count) " ";
+	margin: 0 -1.75rem;
+	padding: 0;
+	position: absolute;
+	z-index: 0;
+}
+
 .vcards {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	grid-column-gap: 50px;
+	justify-content: space-between;
 	align-content: space-between;
 }
 
 .card {
-	width: 15%;
-	margin: 20px;
+	width: 160px;
+	height: 250px;
+	margin: 1.25rem 0;
 	background: #FFFFFF;
-	border: 1px solid #000000;
+	border: 0.0625rem solid #000000;
 	box-sizing: border-box;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
 	border-radius: 10px;
 	
 	font-family: IBM Plex Sans;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 1.125rem;
 	text-align: center;
 
 	color: #000000;
 	
-	padding: 15px;
+	padding: 0.9375rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -301,7 +318,7 @@ body {
 	font-family: IBM Plex Sans;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 1.125rem;
 	text-align: center;
 
 	color: #000000;
