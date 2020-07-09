@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style-gregorio.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body class="map">
+		<div class="procedure-navbar">
+			<a href="gregorio-homepage.html">HOME ></a>
+			<a href="">LIST OF VENUES ></a>
+			<a href="">MAP OF THE ATENEO ></a>
+			<a href="">ACCESS FORMS ></a>
+		</div>
+		<br><br>
+		<div class="main">
+			<h1>Map of the Ateneo</h1>
+			<div class="maparea">
+				<div class="areas">
+					<ul class="areasl">
+						<li><a onClick="mymap.flyTo([14.64142,121.07549],19); marker.setLatLng([14.64142,121.07549]);">Arete</a></li>
+						<li><a onClick="mymap.flyTo([14.64160,121.07972],19); marker.setLatLng([14.64160,121.07972]);">Bellarmine</a></li>
+						<li><a onClick="mymap.flyTo([14.63819,121.07645],19); marker.setLatLng([14.63819,121.07645]);">CTC</a></li>
+						<li><a onClick="mymap.flyTo([14.63952,121.07747],19); marker.setLatLng([14.63952,121.07747]);">Colayco Pavilion</a></li>
+						<li><a onClick="mymap.flyTo([14.63951,121.07672],19); marker.setLatLng([14.63951,121.07672]);">Faura Hall</a></li>
+						<li><a onClick="mymap.flyTo([14.63891,121.07800],19); marker.setLatLng([14.63891,121.07800]);">Gonzaga Hall</a></li>
+						<li><a onClick="mymap.flyTo([14.64169,121.07856],19); marker.setLatLng([14.64169,121.07856]);">ISO</a></li>
+						<li><a onClick="mymap.flyTo([14.63752,121.07697],19); marker.setLatLng([14.63752,121.07697]);">Matteo Ricci</a></li>
+						<li><a onClick="mymap.flyTo([14.63936,121.07747],19); marker.setLatLng([14.63936,121.07747]);">Promenade</a></li>
+						<li><a onClick="mymap.flyTo([14.63839,121.07624],19); marker.setLatLng([14.63839,121.07624]);">SOM</a></li>
+						<li><a onClick="mymap.flyTo([14.64060,121.07681],19); marker.setLatLng([14.64060,121.07681]);">Social Science Bldg.</a></li>
+						<li><a onClick="mymap.flyTo([14.63827,121.07777],19); marker.setLatLng([14.63827,121.07777]);">SEC-A</a></li>
+						<li><a onClick="mymap.flyTo([14.63785,121.07726],19); marker.setLatLng([14.63785,121.07726]);">SEC-B</a></li>
+						<li><a onClick="mymap.flyTo([14.63796,121.07684],19); marker.setLatLng([14.63796,121.07684]);">SEC-C</a></li>
+					</ul>
+				</div>
+				<div id="mapid"></div>
+			</div>
+		</div>
+		<script>
+			let mymap = L.map('mapid').setView([14.63902,121.07715], 18);
+			
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+				maxZoom: 19
+			}).addTo(mymap);
+			
+			let marker=L.marker([0,0]).addTo(mymap);
+		</script>
+	</body>
+</html>
