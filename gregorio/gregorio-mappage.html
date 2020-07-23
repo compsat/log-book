@@ -12,17 +12,27 @@
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	</head>
 	<body class="map">
-		<div class="procedure-navbar">
+		<div class="map-navbar-mobile">
+			<div class="menubutton"><img src="Group 2.svg" onClick="toggleNavbar()"></div>
+			<a class="navbar-contents" href="gregorio-homepage.html">HOME ></a>
+			<a class="navbar-contents" href="">LIST OF VENUES ></a>
+			<a class="navbar-contents" href="">MAP OF THE ATENEO ></a>
+			<a class="navbar-contents" href="">ACCESS FORMS ></a>
+		</div>
+		<div class="map-navbar">
 			<a href="gregorio-homepage.html">HOME ></a>
 			<a href="">LIST OF VENUES ></a>
 			<a href="">MAP OF THE ATENEO ></a>
 			<a href="">ACCESS FORMS ></a>
 		</div>
 		<br><br>
-		<div class="main">
+		<div class="mainmap">
 			<h1>Map of the Ateneo</h1>
 			<div class="maparea">
 				<div class="areas">
+					<label class="switch">
+					<input type="checkbox" class="check"><span class="dropdown">show list of buildings </span><img src="Arrow Drop Down Circle.png" height="16px">
+					
 					<ul class="areasl">
 						<li><a onClick="mymap.flyTo([14.64142,121.07549],19); marker.setLatLng([14.64142,121.07549]);">Arete</a></li>
 						<li><a onClick="mymap.flyTo([14.64160,121.07972],19); marker.setLatLng([14.64160,121.07972]);">Bellarmine</a></li>
@@ -39,6 +49,7 @@
 						<li><a onClick="mymap.flyTo([14.63785,121.07726],19); marker.setLatLng([14.63785,121.07726]);">SEC-B</a></li>
 						<li><a onClick="mymap.flyTo([14.63796,121.07684],19); marker.setLatLng([14.63796,121.07684]);">SEC-C</a></li>
 					</ul>
+					</label>
 				</div>
 				<div id="mapid"></div>
 			</div>
@@ -52,6 +63,18 @@
 			}).addTo(mymap);
 			
 			let marker=L.marker([0,0]).addTo(mymap);
+			
+			function toggleNavbar() {
+				let y = document.getElementsByClassName("navbar-contents");
+				for (let i=0; i<y.length; i++) {
+					if (y.item(i).style.display === "none") {
+						y.item(i).style.display = "block";
+					}
+					else {
+						y.item(i).style.display = "none";
+					}
+				}
+			}
 		</script>
 	</body>
 </html>
