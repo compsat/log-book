@@ -123,7 +123,187 @@ body {
 	font-weight: normal;
 }
 
-@media (min-width: 900px) {
+/* MAP PAGE */
+
+.map .map-navbar a, .areasl a {
+	margin: 1.5625rem;
+	
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.875rem;
+	text-align: center;
+	vertical-align: middle;
+
+	color: #07106D;
+}
+
+.map {
+	height: 100%;
+	width: 100%;
+}
+
+.map-navbar {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	background: #FFCBA6;
+	box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+	padding: 1.5625rem 5rem;
+	overflow: hidden;
+	z-index: 1;
+	visibility: hidden;
+}
+
+.map-navbar-mobile {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	background: #FFCBA6;
+	z-index: 1;
+	
+	display: flex;
+	flex-direction: column;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.map-navbar-mobile a {
+	padding-bottom: 1rem;
+	padding-right: 1rem;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-align: right;
+	vertical-align: middle;
+
+	color: #07106D;
+	visibility: visible;
+}
+
+.map-navbar-mobile img {
+	float: right;
+	margin: 1rem;
+}
+
+.map-navbar-mobile .navbar-contents {
+	display: none;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.mainmap h1 {
+	padding-top: 2rem;
+	padding-left: 1.5rem;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2rem;
+
+	color: #07106D;
+}
+
+.maparea {
+	width: 100%;
+	flex-direction: column;
+	overflow: hidden;
+	overflow-x: hidden;
+}
+
+.map .dropdown {
+	margin: 0;
+	padding-left: 0.5rem;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+.map input {
+	visibility: hidden;
+}
+
+input:checked + .dropdown + img {
+	transform: rotate(180deg);
+}
+
+input:checked + .dropdown + img + .areasl{
+	height: 12.5rem;
+	width: auto;
+}
+
+.areas {
+	padding-right: 1rem;
+}
+
+.areas img {
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.areasl {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 0;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.areasl a {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	text-align: right;
+	cursor: pointer;
+
+	color: #000000;
+	list-style-type: none;
+	text-align: right;
+}
+
+.map li {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	text-align: right;
+
+	color: #000000;
+	list-style-type: none;
+	white-space: nowrap;
+}
+	
+#mapid {
+	position: absolute;
+	height: 80%;
+	width: 100%;
+	z-index: 0;
+}
+
+#mapid a{
+	font-size: 12px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.areasl::-webkit-scrollbar {
+	width: 0.625rem;
+}
+
+.areasl::-webkit-scrollbar-track {
+	background: #ECECEC;
+	border-radius: 5px;
+}
+
+.areasl::-webkit-scrollbar-thumb {
+	background: #07106D;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+@media (min-width: 900px) { /* DESKTOP VERSION */
+	/* HOMEPAGE */
 	.whole {
 		display: flex;
 	}
@@ -186,6 +366,140 @@ body {
 	
 	.right p {
 		margin: 1.25rem 3.125rem;
+	}
+	
+	/* MAP PAGE */
+	.map .map-navbar a, .areasl a {
+		margin: 1.5625rem;
+		
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 0.875rem;
+		text-align: center;
+		vertical-align: middle;
+
+		color: #07106D;
+		visibility: visible;
+	}
+	
+	.map {
+		position: static;
+	}
+	
+	.map-navbar {
+		visibility: visible;
+	}
+	
+	.map-navbar-mobile {
+		display: none;
+	}
+
+	.map h1 {
+		padding: 0;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 2rem;
+
+		color: #07106D;
+	}
+	
+	.mainmap {
+		margin: 6.25rem;
+	}
+
+	.maparea {
+		position: static;
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	.areas {
+		padding-right: 0;
+		position: static;
+		overflow: hidden;
+	}
+	
+	.map .dropdown {
+		display: none;
+	}
+	
+	.map input {
+		display: none;
+	}
+	
+	.map .check {
+		display: none;
+	}
+	
+	.map .areas img {
+		display: none;
+	}
+	
+	input:checked + .dropdown + .areasl{
+		width: auto;
+	}
+
+	.areasl {
+		height: 12.5rem;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		max-width: 2000px;
+	}
+
+	.areasl a {
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1rem;
+		text-align: right;
+		cursor: pointer;
+
+		color: #000000;
+		list-style-type: none;
+		text-align: right;
+	}
+
+	.map li {
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1rem;
+		text-align: right;
+
+		color: #000000;
+		list-style-type: none;
+		white-space: nowrap;
+	}
+
+	#mapid {
+		position: static;
+		margin: 0.625rem;
+		height: 500px;
+		width: 700px;
+		z-index: 0;
+	}
+
+	#mapid a{
+		font-size: 12px;
+		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+
+	.areasl::-webkit-scrollbar {
+		width: 0.625rem;
+	}
+
+	.areasl::-webkit-scrollbar-track {
+		background: #ECECEC;
+		border-radius: 5px;
+	}
+
+	.areasl::-webkit-scrollbar-thumb {
+		background: #07106D;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
 	}
 }
 
@@ -322,96 +636,4 @@ body {
 	text-align: center;
 
 	color: #000000;
-}
-
-/* MAP PAGE */
-
-.map .procedure-navbar a, .areasl a {
-	margin: 1.5625rem;
-	
-	font-family: IBM Plex Sans;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 0.875rem;
-	text-align: center;
-	vertical-align: middle;
-
-	color: #07106D;
-}
-
-.map h1 {
-	font-family: Rubik;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 2rem;
-
-	color: #07106D;
-}
-
-.maparea {
-	display: flex;
-	overflow: hidden;
-}
-
-.areas {
-	postion: fixed;
-	overflow: hidden;
-}
-
-.areasl {
-	height: 12.5rem;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-.areasl a {
-	font-family: IBM Plex Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1rem;
-	text-align: right;
-	cursor: pointer;
-
-	color: #000000;
-	list-style-type: none;
-	text-align: right;
-}
-
-.map li {
-	font-family: IBM Plex Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1rem;
-	text-align: right;
-
-	color: #000000;
-	list-style-type: none;
-	white-space: nowrap;
-}
-
-#mapid {
-	margin: 0.625rem;
-	height: 500px;
-	width: 700px;
-	z-index: 0;
-}
-
-#mapid a{
-	font-size: 12px;
-	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
-
-.areasl::-webkit-scrollbar {
-	width: 0.625rem;
-}
-
-.areasl::-webkit-scrollbar-track {
-	background: #ECECEC;
-	border-radius: 5px;
-}
-
-.areasl::-webkit-scrollbar-thumb {
-	background: #07106D;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
 }
