@@ -7,21 +7,25 @@
     .navbar {
         position: absolute;
         width: 100%;
-        height: 4.188rem;
+        margin: 0;
         background: #FFCBA6;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+        padding: 0rem 4rem;
+        overflow: hidden;
+        z-index: 1;
     }
     
     .nav-link {
-        position: relative;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         font-family: IBM Plex Sans;
         font-style: normal;
         font-weight: 600;
         font-size: 0.875rem;
         text-align: center;
+        vertical-align: middle;
         color: #07106D;
-        margin-left: 3.125rem;
-        left: 2.775rem;
     }
     
     .nav-link:hover {
@@ -30,7 +34,31 @@
         transition: all 2s ease;
         font-size: 1rem;
     }
+    
+    .toggler-btn {
+        margin: .5rem;
+        margin-left: 30rem;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 5px;
+        transition: all 2s ease;
+    }
+    
+    .bar {
+        right: 0;
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background: #262424;
+        border-radius: 15px;
+        transition: all 0.5s ease;
+    }
     /*search*/
+    
+    .search {
+        margin: 6.25rem;
+    }
     
     .search-venue input {
         border-top-style: hidden;
@@ -38,6 +66,8 @@
         border-left-style: hidden;
         border-bottom-style: hidden;
         background-color: #FFFFFF;
+        width: 100%;
+        max-width: 29.5rem;
     }
     
     .no-outline:focus {
@@ -45,31 +75,19 @@
     }
     
     .search-bar {
-        position: absolute;
-        width: 25rem;
-        height: 2.375rem;
-        left: 8.375rem;
-        top: 9.563rem;
         font-family: Rubik;
         font-style: normal;
         font-weight: bold;
         font-size: 2rem;
-        line-height: 2.375rem;
         /* identical to box height */
         color: #07106D;
     }
     
     .search-bar::placeholder {
-        position: absolute;
-        width: 21.75rem;
-        height: 2.375rem;
-        left: 8.375rem;
-        top: 9.563rem;
         font-family: Rubik;
         font-style: normal;
         font-weight: bold;
         font-size: 2rem;
-        line-height: 2.375rem;
         /* identical to box height */
         color: #07106D;
         border: none;
@@ -77,35 +95,23 @@
     }
     
     .search-border {
-        position: absolute;
-        width: 31.813rem;
-        height: 0px;
-        left: 8.375rem;
-        top: 12.875rem;
+        width: 100%;
+        max-width: 31.813rem;
         border: 3px solid #07106D;
     }
     
     .result-bar {
-        position: absolute;
-        width: 18.125rem;
-        height: 2.375rem;
-        left: 8.375rem;
-        top: 17.688rem;
         font-family: Rubik;
         font-style: normal;
         font-weight: bold;
         font-size: 2rem;
-        line-height: 2.375rem;
         /* identical to box height */
         color: #07106D;
     }
     
-    .search-border2 {
+    .result-border {
         position: absolute;
         width: 7.75rem;
-        height: 0px;
-        left: 8.375rem;
-        top: 21.625rem;
         border: 5px solid #000000;
     }
     
@@ -116,21 +122,15 @@
     
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(5, auto);
+        width: auto;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         grid-template-rows: repeat(5, auto);
         grid-gap: 3.125rem;
         justify-content: space-between;
-        margin-left: 8.375rem;
-        margin-right: 8.375rem;
-        padding-top: 25rem;
+        align-content: space-between;
     }
     
     .search-img {
-        position: absolute;
-        width: 21.75rem;
-        height: 2.375rem;
-        left: 37.375rem;
-        top: 9.563rem;
         color: #000000;
     }
     
@@ -138,7 +138,7 @@
         color: #000000;
         text-decoration: none;
         transition: all 2s ease;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
     
     .card0 {
