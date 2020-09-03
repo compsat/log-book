@@ -1,0 +1,647 @@
+/* HOMEPAGE */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background: #FFCBA6;
+}
+
+.whole {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+}
+
+.whole p {
+	margin: 1.25rem 3.125rem;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.875rem;
+	line-height: 1.125rem;
+	
+	color: #262424;
+}
+
+.left {
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	margin: 0;
+	padding: 2rem 2rem 0 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	align-items: left;
+	vertical-align: bottom;
+}
+
+.left h1 {
+	padding:1.875rem 0px;
+	margin: 0;
+	width: 18.75rem;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #262424;
+	white-space: normal;
+}
+
+.left .toprect {
+	width: 9.375rem;
+	height: 0px;
+	line-height: 0px;
+	margin: 0px;
+	padding: 0.46875rem;
+	border-bottom: 2.859375rem solid #5C184E;
+	color: #FFF;
+	background-color: #FFF;
+}
+
+.left .bottomrect {
+	width: 10.3125rem;
+	height: 2.5rem;
+	margin: 0px;
+	border-top: 0.375rem solid #000;
+	color: #FFF;
+	background-color: #FFF;
+}
+
+.right {
+	position: relative;
+	background: #FFCBA6;
+	width: 100%;
+}
+
+.right .space {
+	color: #FFCBA6;
+	font-size: 1rem;
+}
+
+.right ul {
+	padding: 0 0 0 1.875rem;
+}
+
+.right li {
+	list-style-type: none;
+	margin: 1.171875rem 0.46875rem;
+}
+
+.right a, .procedure a, .map a {
+	padding: 0px;
+	margin: 0px;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #07106D;
+	text-decoration: none;
+}
+
+.right h2 {
+	margin: 0.9375rem 2.34375rem;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2.625rem;
+
+	color: #07106D;
+}
+
+.right p {
+	margin: 0.9375rem 2.34375rem;
+}
+
+.right .created-by {
+	font-weight: normal;
+}
+
+/* PROCEDURE PAGE */
+
+.procedure {
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	margin: 6.25rem;
+}
+
+.procedure a {
+	margin: 1.5625rem;
+	
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.875rem;
+	text-align: center;
+	vertical-align: middle;
+
+	color: #07106D;
+}
+
+.procedure h1 {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2rem;
+	
+	color: #262424;
+}
+
+.procedure p {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.875rem;
+
+	color: #262424;
+}
+
+.line {
+	width: 100%;
+	border: 0.0625rem solid #C5C5C5;
+	margin: 2.5rem 0;
+}
+
+.procedure ol {
+	counter-reset: count;
+	margin: 0;
+	padding: 0;
+}
+
+.procedure li {
+	background: #FFFFFF;
+	border: 0.0625rem solid #262424;
+	box-sizing: border-box;
+	box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 0.625rem;
+	padding-left: 3.125rem;
+	margin: 1rem 0;
+	list-style-type: none;
+	counter-increment: count;
+	
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.875rem;
+
+	color: #262424;
+}
+
+.procedure li::before {
+	content: counter(count) " ";
+	margin: 0 -1.75rem;
+	padding: 0;
+	position: absolute;
+	z-index: 0;
+}
+
+.vcards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	grid-column-gap: 50px;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.card {
+	width: 160px;
+	height: 250px;
+	margin: 1.25rem 0;
+	background: #FFFFFF;
+	border: 0.0625rem solid #000000;
+	box-sizing: border-box;
+	box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-align: center;
+
+	color: #000000;
+	
+	padding: 0.9375rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card h2 {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-align: center;
+
+	color: #000000;
+}
+
+/* MAP PAGE */
+
+.map .navbar a, .areasl a {
+	margin: 1.5625rem;
+	
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.875rem;
+	text-align: center;
+	vertical-align: middle;
+
+	color: #07106D;
+}
+
+.navbar a:hover {
+	color: #242424;
+	text-decoration: none;
+	transition: all 2s ease;
+	font-size: 1rem;
+}
+
+.map {
+	height: 100%;
+	width: 100%;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	background: #FFCBA6;
+	box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+	padding: 1.5625rem 5rem;
+	overflow: hidden;
+	z-index: 1;
+	visibility: hidden;
+}
+
+.navbar-mobile {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	background: #FFCBA6;
+	z-index: 1;
+	
+	display: flex;
+	flex-direction: column;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.navbar-mobile a {
+	margin: 0;
+	padding-bottom: 1rem;
+	padding-right: 1rem;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-align: right;
+	vertical-align: middle;
+
+	color: #07106D;
+	visibility: visible;
+}
+
+.navbar-mobile img {
+	float: right;
+	margin: 1rem;
+}
+
+.navbar-mobile img:hover {
+	cursor: pointer;
+}
+
+.navbar-mobile .navbar-contents {
+	display: none;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.mainmap h1 {
+	padding-top: 2rem;
+	padding-left: 1.5rem;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2rem;
+
+	color: #07106D;
+}
+
+.maparea {
+	width: 100%;
+	flex-direction: column;
+	overflow: hidden;
+	overflow-x: hidden;
+}
+
+.map .dropdown {
+	margin: 0;
+	padding-left: 0.5rem;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+.map input {
+	visibility: hidden;
+}
+
+input:checked + .dropdown + img {
+	transform: rotate(180deg);
+}
+
+input:checked + .dropdown + img + .areasl{
+	height: 12.5rem;
+	width: auto;
+}
+
+.areas {
+	padding-right: 1rem;
+}
+
+.areas img {
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.areasl {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 0;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.areasl a {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	text-align: right;
+	cursor: pointer;
+
+	color: #000000;
+	list-style-type: none;
+	text-align: right;
+}
+
+.map li {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	text-align: right;
+
+	color: #000000;
+	list-style-type: none;
+	white-space: nowrap;
+}
+	
+#mapid {
+	position: absolute;
+	height: 80%;
+	width: 100%;
+	z-index: 0;
+}
+
+#mapid a{
+	font-size: 12px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.areasl::-webkit-scrollbar {
+	width: 0.625rem;
+}
+
+.areasl::-webkit-scrollbar-track {
+	background: #ECECEC;
+	border-radius: 5px;
+}
+
+.areasl::-webkit-scrollbar-thumb {
+	background: #07106D;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+@media (min-width: 900px) { /* DESKTOP VERSION */
+	/* HOMEPAGE */
+	.whole {
+		display: flex;
+	}
+	
+	.left {
+		width: 40%;
+		height: 100%;
+		padding: 0;
+		position: fixed;
+		text-align: right;
+		align-items: flex-end;
+		vertical-align: middle;
+	}
+	
+	.left h1 {
+		padding: 1.875rem 1.875rem 1.875rem 0px;
+		font-size: 4rem;
+	}
+	
+	.left .toprect {
+		margin: 1.875rem 1.875rem 1.875rem 0px;
+		width: 12.5rem;
+		padding: 0.625rem;
+		border-bottom: 3.8125rem solid #5C184E;
+	}
+	
+	.left .bottomrect {
+		margin: 0px 1.875rem 1.875rem 0px;
+		width: 13.75rem;
+		height: 6.25rem;
+		border-top: 0.375rem solid #000;
+	}
+	
+	.right {
+		width: 60%;
+		left: 40%;
+	}
+	
+	.right .space {
+		font-size: 4.25rem;
+	}
+	
+	.right ul {
+		padding: 0 0 0 2.5rem;
+	}
+
+	.right li {
+		list-style-type: none;
+		margin: 1.5625rem 0.625rem;
+	}
+	
+	.right a {
+		font-size: 2rem;
+		line-height: 2.375rem;
+	}
+	
+	.right h2 {
+		margin: 1.25rem 3.125rem;
+	}
+	
+	.right p {
+		margin: 1.25rem 3.125rem;
+	}
+	
+	/* MAP PAGE */
+	.map .navbar a, .areasl a {
+		margin: 1.5625rem;
+		
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 0.875rem;
+		text-align: center;
+		vertical-align: middle;
+
+		color: #07106D;
+		visibility: visible;
+	}
+	
+	.map {
+		position: static;
+	}
+	
+	.navbar {
+		visibility: visible;
+	}
+	
+	.navbar a:hover {
+		color: #242424;
+		text-decoration: none;
+		transition: all 2s ease;
+		font-size: 1rem;
+	}
+	
+	.navbar-mobile {
+		display: none;
+	}
+
+	.map h1 {
+		padding: 0;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 2rem;
+
+		color: #07106D;
+	}
+	
+	.mainmap {
+		margin: 6.25rem;
+	}
+
+	.maparea {
+		position: static;
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	.areas {
+		padding-right: 0;
+		position: static;
+		overflow: hidden;
+	}
+	
+	.map .dropdown {
+		display: none;
+	}
+	
+	.map input {
+		display: none;
+	}
+	
+	.map .check {
+		display: none;
+	}
+	
+	.map .areas img {
+		display: none;
+	}
+	
+	input:checked + .dropdown + .areasl{
+		width: auto;
+	}
+
+	.areasl {
+		height: 12.5rem;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		max-width: 2000px;
+	}
+
+	.areasl a {
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1rem;
+		text-align: right;
+		cursor: pointer;
+
+		color: #000000;
+		list-style-type: none;
+		text-align: right;
+	}
+
+	.map li {
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1rem;
+		text-align: right;
+
+		color: #000000;
+		list-style-type: none;
+		white-space: nowrap;
+	}
+
+	#mapid {
+		position: static;
+		margin: 0.625rem;
+		height: 500px;
+		width: 700px;
+		z-index: 0;
+	}
+
+	#mapid a{
+		font-size: 12px;
+		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+
+	.areasl::-webkit-scrollbar {
+		width: 0.625rem;
+	}
+
+	.areasl::-webkit-scrollbar-track {
+		background: #ECECEC;
+		border-radius: 5px;
+	}
+
+	.areasl::-webkit-scrollbar-thumb {
+		background: #07106D;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+	}
+}
